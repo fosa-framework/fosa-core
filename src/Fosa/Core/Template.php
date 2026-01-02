@@ -22,7 +22,7 @@ class Template
                 $this->locale = $locale;
                 $this->translation = (new Locale($locale))->load($template);
             }
-            require_once dirname(__DIR__) . '/app/templates/' . $template . '.template.php';
+            require_once dirname(__FILE__, 7) . '/app/Templates/' . $template . '.template.php';
             return true;
         } else {
             self::render('template-not-found', [
@@ -33,7 +33,7 @@ class Template
 
     protected function template_exist($template)
     {
-        $file_url = realpath(dirname(__DIR__) . '/app/templates/'. $template .'.template.php');
+        $file_url = realpath(dirname(__FILE__, 7) . '/app/Templates/'. $template .'.template.php');
         return file_exists($file_url);
     }
 

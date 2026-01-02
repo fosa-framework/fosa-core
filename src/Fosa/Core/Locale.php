@@ -18,11 +18,11 @@ class Locale
 
     public function __construct($locale = 'en-EN')
     {
-        $LOCAL_DIR = dirname(__DIR__) . '/app/locales/' . $locale;
+        $LOCAL_DIR = dirname(__FILE__, 7) . '/app/Locales/' . $locale;
         if (!is_dir($LOCAL_DIR)) {
             $locale = 'en-EN';
         }
-        require_once dirname(__DIR__) . '/app/locales/' . $locale . '/translation.php';
+        require_once dirname(__FILE__, 7) . '/app/Locales/' . $locale . '/translation.php';
         $this->translation = $translation;
     }
 
