@@ -1,0 +1,16 @@
+{
+  "name": "fosa-framework/fosa-core",
+  "description": "Fosa PHP framework core package",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Mendrika Rabeh",
+      "email": "frabehevitra@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Fosa\\": "src/"
+    }
+  }
+}
