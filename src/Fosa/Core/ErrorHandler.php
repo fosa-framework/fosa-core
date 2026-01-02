@@ -2,8 +2,6 @@
 
 namespace Fosa\Core;
 
-use Fosa\Core\Template;
-
 /**
  * Class ErrorHandler
  * @package Fosa\Core
