@@ -18,13 +18,13 @@ class Config
 
     public function __construct()
     {
-        require __DIR__ . '/constants/config.php';
+        require dirname(__FILE__, 1) . '/constants/config.php';
         $this->config = $config;
     }
 
     public function get($key)
     {
-        if(!$key || !isset($this->config[$key])) {
+        if (!$key || !isset($this->config[$key])) {
             return NULL;
         }
 
