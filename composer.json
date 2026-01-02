@@ -18,10 +18,14 @@
   },
   "autoload": {
     "psr-4": {
-      "Fosa\\": "src/"
+      "Fosa\\": "src/Fosa/"
     },
     "files": [
       "src/Fosa/constants/config.php"
     ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
   }
 }
