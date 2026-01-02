@@ -18,7 +18,7 @@ class Config
 
     public function __construct()
     {
-        require dirname(__FILE__, 1) . '/constants/config.php';
+        require dirname(__FILE__, 2) . '/constants/config.php';
         $this->config = $config;
     }
 
